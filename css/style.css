@@ -79,9 +79,14 @@ nav li {
 nav a {
    background-color: slategrey;
 
-}
+} */
 
 #jump {
-   background-color: black;
+   position: absolute;
+   left: -500px;
 
-} */
+}
+
+#jump:focus{
+   left: 20px;
+}
