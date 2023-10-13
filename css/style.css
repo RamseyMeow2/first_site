@@ -1,11 +1,14 @@
 body {
    background-color: green;
    color: white;
-   margin-left: 20px;
-   margin-right: 20px;
-   margin-top: 20px;
-   margin-bottom: 20px;
+   margin: 3%;
+   margin-top: 10%;
    font-size: 20px;
+   text-align: center;
+}
+
+*:focus {
+   border: 5px solid black;
 }
 
 h1 {
@@ -29,7 +32,7 @@ h3 {
    text-decoration: underline;
    text-decoration-thickness: 4px;
    font-family: 'Times New Roman', Times, serif;
-   color: azure
+   color: azure;
 }
 
 p {
@@ -39,10 +42,42 @@ p {
 
 img {
    border: 5px solid rgb(179, 255, 198);
-   padding: 10px;
-   margin: 20px;
+   padding: 5px;
    border-top-right-radius: 30px 30px;
    border-bottom-left-radius: 30px 30px;
+}
+
+li {
+   font-size: 20px;
+}
+
+nav li {
+   font-size: 25px;
+   display: inline;
+}
+
+nav {
+   text-align: left;
+}
+
+hr {
+   color: black;
+   size: 10px;
+   border-style: inset;
+   border-width: 1px;
+}
+
+#jump {
+   position: absolute;
+   top: -500px;
+}
+
+#jump:focus {
+   top: 10px;
+}
+
+.pet_gallery {
+   text-align: center;
 }
 
 .main_img {
@@ -59,34 +94,46 @@ img {
    width: 400px;
 }
 
-li {
-   font-size: 20px;
-   margin-left: 10px;
-}
-
-nav li {
-   display: inline;
-}
-
 .food_info {
    text-align: center;
 }
 
-/* nav {
-   border: 2px solid black;
+.grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-content: space-evenly;
+   justify-items: center;
+   align-content: space-evenly;
+   align-items: center;
+   grid-row-gap: 5px;
 }
 
-nav a {
-   background-color: slategrey;
-
-} */
-
-#jump {
-   position: absolute;
-   left: -500px;
-
+#static-iamge {
+   display: none;
 }
 
-#jump:focus{
-   left: 20px;
+@media (prefers-reduced-motion: reduce) {
+   #gif-image {
+      display: none;
+   }
+
+   #static-image {
+      display: block;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   body {
+      text-align: left;
+      margin: 3%;
+   }
+
+   .grid {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 20% 20%;
+      grid-gap: 10px;
+      justify-content: space-around;
+   }
 }
