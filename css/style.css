@@ -107,7 +107,7 @@ hr {
    width: 400px;
 }
 
-#petsBar {
+.petsBar {
    display: none;
 }
 
@@ -128,7 +128,7 @@ hr {
       margin: 3%;
    }
 
-   #petsBar {
+   .petsBar {
       display: inline-block;
    }
 
