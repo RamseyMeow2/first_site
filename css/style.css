@@ -107,6 +107,10 @@ hr {
    width: 400px;
 }
 
+#petsBar {
+   display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
    .travel_main_img_gif {
       display: none;
@@ -122,6 +126,10 @@ hr {
       text-align: center;
       font-size: 30px;
       margin: 3%;
+   }
+
+   #petsBar {
+      display: inline-block;
    }
 
    .grid {
@@ -163,6 +171,34 @@ hr {
       text-align: right;
       margin-right: 0;
       margin-left: 5%;
+   }
+
+   button.petsbtn {
+      color:black;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      padding: 5px 7px;
+      position: relative;
+      background-color: rgb(179, 255, 198);
+      isolation: isolate;
+   }
+
+   button.petsbtn::before {
+      content: "";
+      position: absolute;
+      background-color: #33b249;
+      top: 0;
+      left: 100%;
+      right: 0;
+      bottom: 0;
+      transition: left 500ms ease-out;
+
+      z-index: -1;
+   }
+
+   button.petsbtn:hover::before {
+      left: 0;
    }
 
 }
