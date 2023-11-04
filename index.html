@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
     <title>Pets</title>
 </head>
 
@@ -40,8 +41,10 @@
         <div id="subin">
             <div>
                 <h1 class="pets"> Subin</h1>
-                <img class="main_img" src="images/BobTailCat1.jpeg"
-                    alt="Yellow/Brown with small black stripes with a cute stubby tail">
+                <a href="images/BobTailCat1.jpeg" data-lightbox="bob-cat1" data-title="It's My Fav Cat!">
+                    <img class="main_img" src="images/BobTailCat1.jpeg"
+                        alt="Yellow/Brown with small black stripes with a cute stubby tail">
+                </a>
 
                 <p> One of my earliest memories was spending time with a newly born Subin, So in a way,we grew up
                     together.
@@ -349,6 +352,7 @@
         <a href="#main">Back To The Top</a>
 
     </main>
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
