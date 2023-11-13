@@ -98,15 +98,6 @@ hr {
    grid-row-gap: 5px;
 }
 
-.travel_main_img_static {
-   width: 400px;
-   display: none;
-}
-
-.travel_main_img_gif {
-   width: 400px;
-}
-
 .petsBar {
    display: none;
 }
@@ -119,13 +110,21 @@ hr {
    display: none;
 }
 
+.travel_main_img_static {
+   width: 400px;
+}
+
+.travel_main_img_gif {
+   width: 400px;
+}
+
 @media (prefers-reduced-motion: reduce) {
    .travel_main_img_gif {
       display: none;
    }
 
    .travel_main_img_static-image {
-      display: block;
+      display: initial;
    }
 }
 
