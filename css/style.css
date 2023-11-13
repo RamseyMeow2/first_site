@@ -112,6 +112,7 @@ hr {
 
 .travel_main_img_static {
    width: 400px;
+   display: none;
 }
 
 .travel_main_img_gif {
@@ -123,7 +124,7 @@ hr {
       display: none;
    }
 
-   .travel_main_img_static-image {
+   .travel_main_img_static {
       display: initial;
    }
 }
