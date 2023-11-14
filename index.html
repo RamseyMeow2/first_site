@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/lightbox.min.css" rel="stylesheet" />
+    <link rel="icon" href="images/BobTailCat1.jpeg">
     <title>Pets</title>
 </head>
 
@@ -15,7 +16,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Current: Pets</a></li>
+            <li><a href="index.html" id="current">Current: Pets</a></li>
             <li>|</li>
             <li><a href="recipes.html">Recipes</a></li>
             <li>|</li>
@@ -73,14 +74,25 @@
 
             <h2 class="pet_gallery">Subin's Photo Gallery</h2>
             <div class="grid">
-                <img class="sub_img" src="images/BobTailCat2.jpeg"
-                    alt="Small young subin with blue background facing towards the camera">
-                <img class="sub_img" src="images/BobTailCat3.jpeg"
-                    alt="Small young subin with blue background looking bottom left">
-                <img class="sub_img" src="images/BobTailCat4.jpeg"
-                    alt="Older subin with a greenish blue background ready to pounce">
-                <img class="sub_img" src="images/BobTailCat5.jpeg"
-                    alt="Very old and mature subin with a brownish yellow background looking at the camera">
+                <a href="images/BobTailCat2.jpeg" data-lightbox="bob-cat2" data-title="Catto 2">
+                    <img class="sub_img" src="images/BobTailCat2.jpeg"
+                        alt="Small young subin with blue background facing towards the camera">
+                </a>
+
+                <a href="images/BobTailCat3.jpeg" data-lightbox="bob-cat3" data-title="Catto 3">
+                    <img class="sub_img" src="images/BobTailCat3.jpeg"
+                        alt="Small young subin with blue background looking bottom left">
+                </a>
+
+                <a href="images/BobTailCat4.jpeg" data-lightbox="bob-cat4" data-title="Catto 4">
+                    <img class="sub_img" src="images/BobTailCat4.jpeg"
+                        alt="Older subin with a greenish blue background ready to pounce">
+                </a>
+
+                <a href="images/BobTailCat5.jpeg" data-lightbox="bob-cat5" data-title="Catto 5">
+                    <img class="sub_img" src="images/BobTailCat5.jpeg"
+                        alt="Very old and mature subin with a brownish yellow background looking at the camera">
+                </a>
             </div>
 
             <div>
