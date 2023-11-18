@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="css/lightbox.min.css" rel="stylesheet">
     <link rel="icon" href="images/BobTailCat1.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
     <title>Pets</title>
 </head>
 
@@ -38,7 +39,6 @@
 
     <section class="inputs">
         <br>
-        <br>
         <h2> Weather Update! Should you take your pet out?</h2>
         <label for="cityinput">City: </label>
         <input type="text" placeholder="Enter any city..." id="cityinput">
@@ -46,6 +46,13 @@
         <input type="submit" value="Submit" id="add">
     </section>
     <div id="temp"></div>
+
+    <section class="inputs">
+        <br>
+        <h2> Want some dog facts??</h2>
+        <input type="submit" value="YES!" id="doggoAdd">
+    </section>
+    <div id="fact"></div>
 
     <br>
 
@@ -369,13 +376,21 @@
             </div>
             <!-- Grace Zhu and John McCloskey -->
         </div>
-
         <br>
-        <br>
-        <a href="#main">Back To The Top</a>
     </main>
+
+    <footer>
+        <a href="#main">Back To The Top</a>
+        <p>Gmail: nlphyo@umich.edu</p>
+        <p>Address: 123 Main Street, Move, Mars</p>
+        <img src="images/icon.jpg" alt="Website Icon" onclick=redirectToWebsite()>
+    </footer>
+
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/temperature.js"></script>
+    <script src="js/dogFacts.js"></script>
+    <script src="js/redirect.js"></script>
+    
 </body>
 
 </html>
