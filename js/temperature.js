@@ -1,15 +1,6 @@
-var inputval = document.querySelector('#cityinput')
+var inputval = document.querySelector('#stateInput')
 var btn = document.querySelector('#add');
-var temp = document.querySelector('#temp')
-
-
-apik = "3045dd712ffe6e702e3245525ac7fa38"
-
-
-function convertion(val) {
-    return (val - 273).toFixed(2)
-}
-
+var locations = document.querySelector('#locations')
 
 btn.addEventListener('click', function () {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputval.value + '&appid=' + apik)
